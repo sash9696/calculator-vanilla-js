@@ -4,48 +4,65 @@
 <html>
 	<head>
 		<title>
-			
+			DrumKit
 		</title>
         <link rel="stylesheet" type="text/css" href="style.css"  />
 
 	</head>
 
 	<body>
-		<div>
-			<div id="container">
-				<div id="display"></div>
-				<div class="buttons">
-					<div class="button">C</div>
-					<div class="button">/</div>
-					<div class="button">*</div>
-					<div class="button"><-</div>
-					<div class="button">7</div>
-					<div class="button">8</div>
-					<div class="button">9</div>
-					<div class="button">-</div>
-					<div class="button">4</div>
-					<div class="button">5</div>
-					<div class="button">6</div>
-					<div class="button">+</div>
-					<div class="button">1</div>
-					<div class="button">2</div>
-					<div class="button">3</div>
-					<div class="button">.</div>
-					<div class="button">(</div>
-					<div class="button">0</div>
-					<div class="button">)</div>
-					<div id="equal" class="button">=</div>
+		<h1 onmouseenter="changetext('Press the below shown keys')" onmouseleave="changetext('Hover Me')" id="headertext">Hover Me</h1>
+		<div class="keys">
+				<div data-key="65" class="key">
+					<p>A</p>
+					<span>CLAP</span>
 				</div>
-
-			</div>
+				<div data-key="83" class="key">
+					<p>s</p>
+					<span>hihat</span>
+				</div>
+				<div class="key" data-key="68">
+					<p>d</p>
+					<span>kick</span>
+				</div>
+				<div class="key" data-key="70">
+					<p>f</p>
+					<span>openhat</span>
+				</div>
+				<div class="key" data-key="71">
+					<p>g</p>
+					<span>boom</span>
+				</div>
+				<div class="key" data-key="72">
+					<p>h</p>
+					<span>ride</span>
+				</div>
+				<div class="key" data-key="74">
+					<p>j</p>
+					<span>snare</span>
+				</div>
+				<div class="key" data-key="75">
+					<p>k</p>
+					<span>tom</span>
+				</div>
+				<div class="key" data-key="76">
+					<p>L</p>
+					<span>tink</span>
+				</div>
+				
 		</div>
+		<audio src="sounds/clap.wav" data-key="65"></audio>
+		<audio src="sounds/hihat.wav" data-key="83"></audio>
+		<audio src="sounds/kick.wav" data-key="68"></audio>
+		<audio src="sounds/openhat.wav" data-key="70"></audio>
+		<audio src="sounds/boom.wav" data-key="71"></audio>
+		<audio src="sounds/ride.wav" data-key="72"></audio>
+		<audio src="sounds/snare.wav" data-key="74"></audio>
+		<audio src="sounds/tom.wav" data-key="75"></audio>
+		<audio src="sounds/tink.wav" data-key="76"></audio>
 		
 		
-		
-        
-        
-
-		
+	
        
 	</body>
     <script type="text/javascript" src="index.js"></script>
